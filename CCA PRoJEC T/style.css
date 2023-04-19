@@ -8,7 +8,7 @@
   
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
     color: #333;
     
@@ -50,6 +50,7 @@
   
   .nav ul {
     display: flex;
+    
   }
   
   .nav li {
@@ -57,16 +58,16 @@
   }
   
   .nav li a {
-    font-size: 20px;
-    color: #666;
+    font-size: 15px;
+    color: #000000;
   }
   
   .nav li a:hover {
-    color: #0f0806;
+    color: #fffdfc;
   }
   /* Global styles */
   body {
-    font-family: "Gabriola",'Times New Roman', Times, serif;
+    font-family: Verdana, Arial, Tahoma, Serif;
     margin: 0;
     padding: 0;
   }
@@ -80,8 +81,8 @@
   
   /* Sidebar */
   .sidebar {
-    background-color: #1e1e1e;
-    color: #ffffff;
+    background-color: #ce2121;
+    color: #7dc233;
     width: 200px;
     display: flex;
     flex-direction: column;
@@ -104,7 +105,7 @@
   
   .menu a {
     text-decoration: none;
-    color: #ffffff;
+    color: #31af28;
     font-size: 20px;
     margin-bottom: 20px;
     padding: 10px;
@@ -113,13 +114,13 @@
   }
   
   .menu a:hover {
-    background-color: #ffffff;
-    color: #1e1e1e;
+    background-color: #872f2f;
+    color: #1be26a;
   }
   
   /* Main content */
   .main-content {
-    background-color: #c0795a;
+    background-color: #cb5e30;
     flex: 1;
     padding: 20px;
   }
@@ -128,13 +129,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   
   .header h1 {
     font-size: 70px;
     font-weight: bold;
-    color: #1e1e1e;
+    color: #000000;
     text-transform: uppercase;
   }
   .container {
@@ -144,7 +145,7 @@
   
   .sidebar-left {
     flex: 0 0 200px;
-    background-color: #d57438;
+    background-color: #c8692e;
     padding: 20px;
   }
   
@@ -166,8 +167,8 @@
   }
   
   .sidebar-left a:hover {
-    background-color: #c06c4c;
-    color: #FFF;
+    background-color: #743014;
+    color: #fefeff;
   }
   
   .content {
@@ -194,7 +195,7 @@
   
   button {
     background-color: #333;
-    color: #FFF;
+    color: #faf4f4;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -204,7 +205,7 @@
   
   button:hover {
     background-color: #FFF;
-    color: #333;
+    color: #c6580f;
     border: 1px solid #333;
   }
   
@@ -308,65 +309,111 @@
     background-color: #ff7f50;
     color: #fff;
   }
-  
-  /* Featured artists styles */
-  
-  /*.featured {
-    padding: 50px;
-  }
-  
-  .featured h3 {
-    font-size: 32px;
-    color: #ff7f50;
-    margin-bottom: 30px;
+  .subscription-container {
+    margin: 50px auto;
+    max-width: 400px;
     text-align: center;
   }
   
-  .artists {
+  .subscription-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .subscription-container form {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
   }
   
-  .artist {
-    margin: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    overflow: hidden;
-    background-color: #fff;
-    position: relative;
-    width: 300px;
-  }
-  
-  .artist img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .artist h4 {
-    font-size: 24px;
-    color: #333;
-    margin: 20px;
-  }
-  
-  .artist p {
+  .subscription-container label {
     font-size: 18px;
-    color: #666;
-    margin: 20px;
+    margin-bottom: 10px;
+    text-align: left;
   }
   
-  .artist a {
-    display: inline-block;
-    padding: 50px 20px;
-    background-color: #d6d6d6;
-    color: #333;
-    border-radius: 20px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+  .subscription-container select,
+  .subscription-container input[type="text"],
+  .subscription-container input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
   }
   
-  .artist a:hover {
+  .subscription-container button {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #1db954;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .subscription-container button:hover {
+    background-color: #1ed760;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .sidebar-left {
+    width: 200px;
+    height: 100vh;
     background-color: #333;
     color: #fff;
   }
+  
+  .sidebar-left ul {
+    list-style: none;
+    padding: 20px;
+  }
+  
+  .sidebar-left ul li {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-left ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .sidebar-left ul li.active a {
+    font-weight: bold;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .main-content h1 {
+    margin-bottom: 20px;
+  }
+  
+  .artist-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .artist {
+    flex-basis: calc(33.33% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .artist:last-child {
+    margin-right: 0;
+  }
+  
+  
+  
